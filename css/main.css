@@ -20,14 +20,27 @@ body *
 {
 	display: flex;
 	align-items: center;
+	padding: 20px;
 	padding-left: 50px;
 }
 
 .brand h1
 {
-	font-family: 'Abel', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: lighter;
 	font-size: 34px;
+}
+
+.brand h1 a
+{
+	text-decoration: none;
+	color: #636363;
+	transition: color 0.25s ease-in-out 0s;
+}
+
+.brand h1 a:hover
+{
+	color: #303030;
 }
 
 .nav
@@ -40,10 +53,16 @@ body *
 .nav-link
 {
 	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 20px;
+	font-weight: lighter;
+	font-size: 17px;
 	text-decoration: none;
-	color: #525252;
+	color: #636363;
 	position: relative;
+}
+
+.nav-link:hover
+{
+	color: #303030;
 }
 
 .nav-link::before

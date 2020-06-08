@@ -2,32 +2,55 @@ body
 {
 	background-color: #f7f7f7;
 	margin: 0;
+	overflow-x: none;
 }
 
-/*
-body *
+.header
 {
-	border: 2px solid grey;
-	font-family: Tahoma, Geneva, sans-serif;
+	background-color: #f7f7f7;
+	text-align: center;
 }
-*/
+
+.brand h1
+{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: lighter;
+	font-size: 34px;
+}
+
+.brand h1 a
+{
+	text-decoration: none;
+	color: #636363;
+	transition: color 0.25s ease-in-out 0s;
+}
+
+.brand h1 a:hover
+{
+	color: #303030;
+}
+
+.nav-link
+{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: lighter;
+	font-size: 17px;
+	text-decoration: none;
+	color: #636363;
+	position: relative;
+	padding: 20px;
+}
 
 .img
 {
-	width: 80%;
-	margin-left: 10%;
+	width: 100%;
 }
 
 .container
 {
+	padding: 0px 20px 0px;
 	font-family: Tahoma, Geneva, sans-serif;
 	background-color: #f7f7f7;
-	margin-left: 80px;
-	margin-right: 80px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 40px;
-	padding-right: 40px;
 }
 
 .article-title
@@ -38,5 +61,106 @@ body *
 
 .article-content
 {
-	font-size: 20px;
+	font-size: 17px;
+	line-height: 1.3;
+}
+
+.article-sub-title
+{
+	font-weight: lighter;
+	font-size: 24px;
+}
+
+.aritcle-list
+{
+	list-style: none;
+	line-height: 1.5;
+}
+
+.aritcle-list li::before
+{
+	content: "\2022";
+	color: #3498DB;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+@media only screen and (min-width: 1280px)
+{
+	.navbar
+	{
+		display: flex;
+		align-items: center;
+		padding: 20px;
+		padding-left: 50px;
+	}
+
+	.nav
+	{
+		flex: 1;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.nav-link
+	{
+		padding: initial;
+	}
+
+	.nav-link:hover
+	{
+		color: #303030;
+	}
+
+	.nav-link::before
+	{
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 2px;
+		left: 0;
+		bottom: -5px;
+		background-color: #3498DB;
+		visibility: hidden;
+		transform: scaleX(0);
+		transition: all 0.25s ease-in-out 0s; 
+	}	
+
+	.nav-link:hover::before
+	{
+		visibility: visible;
+		transform: scaleX(1.3);
+	}
+
+	.img
+	{
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	.container
+	{
+		font-family: Tahoma, Geneva, sans-serif;
+		background-color: #f7f7f7;
+		margin-left: 150px;
+		margin-right: 150px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.article-content
+	{
+		font-size: 20px;
+		line-height: 1.5;
+	}
+
+	.aritcle-list
+	{
+		list-style: none;
+		line-height: 2;
+	}
 }

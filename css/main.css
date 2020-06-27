@@ -34,16 +34,11 @@ body
 {
 	font-family: Tahoma, Geneva, sans-serif;
 	font-weight: lighter;
-	font-size: 17px;
+	font-size: 1em;
 	text-decoration: none;
 	color: #636363;
 	position: relative;
 	padding: 20px;
-}
-
-.img
-{
-	width: 100%;
 }
 
 .container
@@ -51,90 +46,6 @@ body
 	padding: 0px 20px 0px;
 	font-family: Tahoma, Geneva, sans-serif;
 	background-color: #f7f7f7;
-}
-
-.article-title
-{
-	font-size: 30px;
-	color: #3498DB;
-}
-
-.article-content
-{
-	font-size: 17px;
-	line-height: 1.3;
-}
-
-.article-sub-title
-{
-	font-weight: lighter;
-	font-size: 24px;
-}
-
-.aritcle-list
-{
-	list-style: none;
-	line-height: 1.5;
-}
-
-.aritcle-list li::before
-{
-	content: "\2022";
-	color: #3498DB;
-	font-weight: bold;
-	display: inline-block;
-	width: 1em;
-	margin-left: -1em;
-}
-
-.projects
-{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.project
-{
-	font-family: Tahoma, Geneva, sans-serif;
-	margin: 0px 10% 10% 10%;
-	flex-basis: 80%;
-}
-
-.project-content img
-{
-	width: 100%;
-}
-
-.project h3
-{
-	text-align: center;
-}
-
-.project-content
-{
-	position: relative;
-}
-
-.project-description
-{
-	opacity: 0;
-	
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(42, 42, 42, 0.7);
-	color: #c4c4c4;
-
-
-	transition: opacity 0.5s
-}
-
-.project-description:hover
-{
-	opacity: 1;
 }
 
 @media only screen and (min-width: 1280px)
@@ -184,12 +95,6 @@ body
 		transform: scaleX(1.3);
 	}
 
-	.img
-	{
-		width: 80%;
-		margin-left: 10%;
-	}
-
 	.container
 	{
 		font-family: Tahoma, Geneva, sans-serif;
@@ -200,24 +105,5 @@ body
 		padding-bottom: 20px;
 		padding-left: 40px;
 		padding-right: 40px;
-	}
-
-	.article-content
-	{
-		font-size: 20px;
-		line-height: 1.5;
-	}
-
-	.aritcle-list
-	{
-		list-style: none;
-		line-height: 2;
-	}
-
-	.project
-	{
-		font-family: Tahoma, Geneva, sans-serif;
-		margin: 50px;
-		flex-basis: 40%;
 	}
 }

@@ -1,0 +1,107 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #bdc3c7;
+    background: #34495e;
+}
+
+header {
+    background: #2c3e50;
+}
+
+a {
+    color: #3498db;
+}
+
+.slideshow-container {
+    position: absolute;
+    right: 0px;
+    width: 66.66%;
+    overflow: hidden;
+}
+
+.slides {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    position: relative;
+    width: 33.33%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.slide-nav-bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.slide-nav-bar:hover {
+    background: #fff;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0%;
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -33.33%;
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -66.66%;
+}
+
+.descriptions-container {
+    padding: 30px;
+    width: 33%;
+    line-height: 3rem;
+}
+
+.description h3 {
+    font-size: 3rem;
+    padding-bottom: 15px;
+}
+
+.description p {
+    font-size: 1.2rem;
+}
+
+.description img {
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.images {
+    text-align: center;
+}
